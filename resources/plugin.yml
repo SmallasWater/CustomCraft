@@ -1,0 +1,14 @@
+name: DIYCraft
+main: CraftItem.Craft
+api: ["1.0.8"]
+version: "1.0.9"
+author: "若水"
+load: POSTWORLD
+commands:
+  craft:
+    usage: "/craft add <name> 将手中物品添加配置"
+    description: "将手中物品添加为合成物品或输入物品"
+    permission: diycraft.craft
+permissions:
+  diycraft.craft:
+    default: op
