@@ -46,6 +46,9 @@ public class CustomCraft extends PluginBase {
         this.registerFrame();
 
         this.getLogger().info("自定义合成加载成功!");
+        this.getServer().getScheduler().scheduleTask(this, () -> {
+            this.getLogger().info("CustomCraft是一款免费插件，开源链接：https://github.com/SmallasWater/CustomCraft");
+        });
     }
 
     private void registerFrame() {
