@@ -1,8 +1,12 @@
-package CraftItem;
+package customcraft;
 
-class Tools {
+public class Tools {
 
-    static byte[] hexStringToBytes(String hexString) {
+    private Tools() {
+
+    }
+
+    public static byte[] hexStringToBytes(String hexString) {
         if (hexString == null || "".equals(hexString)) {
             return null;
         }
@@ -16,11 +20,12 @@ class Tools {
         }
         return d;
     }
+
     private static byte charToByte(char c) {
         return (byte) "0123456789ABCDEF".indexOf(c);
     }
 
-    static String bytesToHexString(byte[] src){
+    public static String bytesToHexString(byte[] src) {
         StringBuilder stringBuilder = new StringBuilder();
         if (src == null || src.length <= 0) {
             return null;
@@ -35,4 +40,5 @@ class Tools {
         }
         return stringBuilder.toString();
     }
+
 }
