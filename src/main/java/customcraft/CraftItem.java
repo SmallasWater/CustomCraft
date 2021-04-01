@@ -37,13 +37,11 @@ class CraftItem {
         String[] items = i.split(SPLIT_2);
         if (items.length > 1) {
             if (items.length > 2) {
-                Item item = Item.get(Integer.parseInt(items[0]), Integer.parseInt(items[1]));
-                item.setCount(Integer.parseInt(items[2]));
-                return item;
+                return Item.get(Integer.parseInt(items[0]), Integer.parseInt(items[1]), Integer.parseInt(items[2]));
             }
             return Item.get(Integer.parseInt(items[0]), Integer.parseInt(items[1]));
         }
-        return new Item(0, 0);
+        return Item.get(0);
     }
 
 

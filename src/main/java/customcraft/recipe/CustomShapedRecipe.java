@@ -16,8 +16,4 @@ public class CustomShapedRecipe extends ShapedRecipe {
         super(recipeId, priority, primaryResult, shape, ingredients, extraResults);
     }
 
-    public CustomShapedRecipe(String recipeId, int priority, Item primaryResult, String[] shape, Map<Character, Item> ingredients, List<Item> extraResults, Integer networkId) {
-        super(recipeId, priority, primaryResult, shape, ingredients, extraResults, networkId);
-    }
-
 }

@@ -15,8 +15,4 @@ public class CustomShapelessRecipe extends ShapelessRecipe {
         super(recipeId, priority, result, ingredients);
     }
 
-    public CustomShapelessRecipe(String recipeId, int priority, Item result, Collection<Item> ingredients, Integer networkId) {
-        super(recipeId, priority, result, ingredients, networkId);
-    }
-
 }
