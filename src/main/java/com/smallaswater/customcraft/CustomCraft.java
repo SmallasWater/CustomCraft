@@ -1,4 +1,4 @@
-package customcraft;
+package com.smallaswater.customcraft;
 
 import cn.nukkit.Player;
 import cn.nukkit.Server;
@@ -20,9 +20,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public class Craft extends PluginBase {
+public class CustomCraft extends PluginBase {
 
-    private static Craft instance;
+    private static CustomCraft instance;
 
     private Config craft = null;
     private Config nbt = null;
@@ -111,7 +111,7 @@ public class Craft extends PluginBase {
         manager.rebuildPacket();
     }
 
-    private static Craft getInstance() {
+    public static CustomCraft getInstance() {
         return instance;
     }
 
@@ -133,8 +133,8 @@ public class Craft extends PluginBase {
         return this.nbt;
     }
 
-    static String getNbtItem(String string) {
-        return Craft.getInstance().getCraftItemConfig().getString(string);
+    public static String getNbtItem(String string) {
+        return CustomCraft.getInstance().getCraftItemConfig().getString(string);
     }
 
     @Override
@@ -174,7 +174,7 @@ public class Craft extends PluginBase {
         if (tag != null && !"".equals(tag)) {
             return false;
         } else {
-            Config config = Craft.getInstance().getCraftItemConfig();
+            Config config = CustomCraft.getInstance().getCraftItemConfig();
             config.set(name, CraftItem.toStringItem(item));
             config.save();
             return true;

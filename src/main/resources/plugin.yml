@@ -1,5 +1,5 @@
-name: DIYCraft
-main: craftitem.Craft
+name: CustomCraft
+main: com.smallaswater.customcraft.CustomCraft
 api: ["1.0.8"]
 version: "1.0.9"
 author: "若水"

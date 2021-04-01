@@ -1,4 +1,4 @@
-package customcraft.recipe;
+package com.smallaswater.customcraft.recipe;
 
 import cn.nukkit.inventory.ShapelessRecipe;
 import cn.nukkit.item.Item;
